@@ -1,0 +1,84 @@
+/* Fixes for Tachyons to work properly */
+html,body{
+  height:100%;
+}
+
+div{
+  margin:0;
+  padding:0;
+}
+
+p{
+  margin:0;
+  padding:0;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
+/* Floating Navbar at bottom of screen */
+.floating-navbar{
+  position:fixed;
+  width:100%;
+  z-index:1;
+  bottom:0;
+  }
+
+@media (max-width:600px){
+  .floating-navbar{
+    display:none!important;
+  }
+}
+
+/* Fonts */
+.roboto{
+  font-family:'Roboto', sans-serif;
+}
+
+.bitter{
+  font-family: 'Bitter', serif;
+}
+
+/* Parallax Image Background */
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Landing Background */
+.landing{
+  background-image:radial-gradient(transparent, transparent, transparent, #222),url("../img/landing1.jpg");
+  background-color:#45340C;
+}
+
+#subtitle{
+  margin-left:33%;
+}
+
+.vignette{
+  background:radial-gradient(transparent, transparent, transparent, #222);
+}
+
+/* Fade-In Animation */
+.anim-fadein{
+  -webkit-animation:animFade 3.0s;
+  animation:animFade 3.0s;
+}
+@-webkit-keyframes animFade{
+  from{
+    opacity:0;
+    } to{
+      opacity:1;
+      }
+    }
+@keyframes animFade{
+  from{
+    opacity:0;
+    } to{
+      opacity:1;
+      }
+    }
